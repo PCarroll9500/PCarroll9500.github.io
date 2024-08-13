@@ -14,6 +14,12 @@
     font-size: 17px;
 }
 
+/* Change the color of the active tab */
+.topnav a.active {
+    background-color: #0449aa;
+    color: white;
+}
+
 /* Change the color of links on hover */
 .topnav a:hover {
     background-color: #ddd;
