@@ -1,148 +1,437 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <title>Patrick Carroll</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel= "stylesheet" href= "main.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        html, body, h1, h2, h3, h4, h5, h6 {
-            font-family: "Roboto", sans-serif
-        }
-    </style>
-    <script src="https://kit.fontawesome.com/6cc4bf16a7.js" crossorigin="anonymous"></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
 <canvas id="pattern"></canvas>
-<script src="index.js"></script>
 
-
-
-<div class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="resume.html">Resume</a>
-    <a href="resume-builder.html">Create a Resume Like Mine!</a>
-</div>
-
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
-
-    <!-- The Grid -->
-    <div class="w3-row-padding">
-
-        <!-- Left Column -->
-        <div class="w3-third">
-            <div class="w3-white w3-text-grey w3-card-4">
-                <div class="w3-display-container">
-                    <img src="Profile_Photo.jpg" style="width:100%" alt="Avatar">
-
-                </div>
-                <div class="w3-container">
-                    <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-blue"></i>Computer Scientist / Engineer</p>
-                    <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-blue"></i>Beavercreek, OH</p>
-                    <!-- Add email link -->
-                    <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue"></i>PatrickCarroll.IT@outlook.com
-                    </p>
-                    <!-- Add Link to attempt call -->
-                    <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-blue"></i>843-437-6951</p>
-                </div>
-            </div>
-            <br>
-
+<nav class="topnav">
+    <div class="nav-inner">
+        <span class="nav-logo">PC</span>
+        <div class="nav-links">
+            <a class="active" href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="resume-builder.html">Resume Builder</a>
         </div>
-        <!-- End Left Column -->
+    </div>
+</nav>
 
-
-        <!-- Right Column -->
-        <div class="w3-twothird">
-
-            <div class="w3-container w3-card w3-white w3-margin-bottom">
-                <h2 class="w3-text-grey w3-padding-16"><i
-                        class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Texas A&M
-                    University-Corpus Christi, Senior</h2>
-                <div class="w3-container">
-                    <h4 class="w3-opacity"><b>Bachelor of Science, in Computer Science GPA 3.65</b></h4>
-                    <h5 class="w3-opacity"><b>Focus Systems Programming</b></h5>
-                    <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2019 - Dec 2023</h6>
-                </div>
-                <hr>
-                
-            </div>
-
-            <div class="w3-container w3-card w3-white w3-margin-bottom">
-                <h2 class="w3-text-grey w3-padding-16"><i
-                        class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Certifications</h2>
-                <div class="w3-container">
-                    <h4 class="w3-opacity"><b>CompTIA Security+</b></h4>
-                    <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2022 - <span
-                            class="w3-tag w3-blue w3-round">Current</span></h6>
-                </div>
-                <hr>
-
-            </div>
-
-            <div class="w3-container w3-card w3-white">
-                <h2 class="w3-text-grey w3-padding-16"><i
-                        class="fa fa-briefcase fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Work History</h2>
-                <div class="w3-container">
-                    <h4 class="w3-opacity"><b>Junior Model and Simulation Engineer</b></h4>
-                    <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2024 - <span
-                            class="w3-tag w3-blue w3-round">Present</span></h6>
-                </div>
-                <hr>
-                <div class="w3-container">
-                    <h4 class="w3-opacity"><b>System Software Support Engineer</b></h4>
-                    <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2024 - Aug 2024
-                    </h6>
-                <hr>
-                </div>
-                <div class="w3-container">
-                    <h4 class="w3-opacity"><b>Navy Reservist Information Systems Technician</b></h4>
-                    <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2019 - Feb 2025
-                    </h6>
-                </div>
-                <hr>
-                <div class="w3-container">
-                    <h4 class="w3-opacity"><b>IT Systems Administration Assistant</b></h4>
-                    <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2019 - Dec 2021
-                    </h6>
-                </div>
-                <hr>
-                <div class="w3-container">
-                    <h4 class="w3-opacity"><b>Cable Technician - 3 Month Contract</b></h4>
-                    <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2021 - Aug 2021
-                    </h6>
-                </div>
-                <hr>
-                <div class="w3-container">
-                    <h4 class="w3-opacity"><b>Navy Active Duty Submarine Radioman</b></h4>
-                    <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2014 - Apr 2019
-                    </h6>
-                </div>
-                <hr>
-                <!-- End Right Column -->
-            </div>
-
-
-            <!-- End Grid -->
+<!-- HERO -->
+<header class="hero">
+    <div class="hero-left">
+        <div class="hero-label"><span class="mono">// engineer · veteran · builder</span></div>
+        <h1 class="hero-name">PATRICK<br>CARROLL</h1>
+        <p class="hero-title">Model &amp; Simulation Engineer &mdash; Radiance Technologies</p>
+        <div class="clearance-badge">
+            <span class="badge-dot"></span>
+            <span class="mono">TS/SCI CLEARED</span>
         </div>
+        <div class="hero-contact">
+            <a href="mailto:PatrickCarroll.IT@outlook.com"><i class="fa-solid fa-envelope"></i> PatrickCarroll.IT@outlook.com</a>
+            <a href="tel:8434376951"><i class="fa-solid fa-phone"></i> 843-437-6951</a>
+            <span><i class="fa-solid fa-location-dot"></i> Beavercreek, OH</span>
+        </div>
+        <div class="hero-social">
+            <a href="https://www.linkedin.com/in/patrick-carroll-9500-it" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/PCarroll9500" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+        </div>
+    </div>
+    <div class="hero-right">
+        <div class="photo-frame">
+            <img src="Profile_Photo.jpg" alt="Patrick Carroll">
+        </div>
+    </div>
+</header>
 
-        <!-- End Page Container -->
+<!-- MAIN CONTENT GRID -->
+<div class="content-grid">
+
+    <!-- Left: Education + Certs -->
+    <div class="col-left">
+
+        <section class="panel">
+            <h2 class="panel-title"><span class="mono">//</span> Education</h2>
+            <div class="panel-item">
+                <div class="item-name">Texas A&amp;M University &mdash; Corpus Christi</div>
+                <div class="item-sub">B.S. Computer Science &middot; GPA 3.65 &middot; Systems Programming</div>
+                <div class="item-date mono">2019 &ndash; 2023</div>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2 class="panel-title"><span class="mono">//</span> Certifications</h2>
+            <div class="panel-item">
+                <div class="item-name">CompTIA Security+</div>
+                <div class="item-date mono">Jun 2022 &ndash; <span class="status-live">ACTIVE</span></div>
+            </div>
+            <div class="panel-item">
+                <div class="item-name">Microsoft Azure AI Fundamentals</div>
+                <div class="item-date mono">Jul 2023 &ndash; <span class="status-live">ACTIVE</span></div>
+            </div>
+        </section>
+
     </div>
 
+    <!-- Right: Work History timeline -->
+    <div class="col-right">
+        <section class="panel">
+            <h2 class="panel-title"><span class="mono">//</span> Experience</h2>
+            <div class="timeline">
+
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <div class="tl-content">
+                        <div class="tl-name">Junior Model &amp; Simulation Engineer</div>
+                        <div class="tl-org">Radiance Technologies &middot; Beavercreek, OH</div>
+                        <div class="tl-date mono">Aug 2024 &ndash; <span class="status-live">Present</span></div>
+                    </div>
+                </div>
+
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <div class="tl-content">
+                        <div class="tl-name">System Software Support Engineer</div>
+                        <div class="tl-org">MBS Professional &middot; Mason, OH</div>
+                        <div class="tl-date mono">Jan 2024 &ndash; Aug 2024</div>
+                    </div>
+                </div>
+
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <div class="tl-content">
+                        <div class="tl-name">Information Systems Technician</div>
+                        <div class="tl-org">United States Navy Reserve &middot; Cincinnati, OH</div>
+                        <div class="tl-date mono">Apr 2019 &ndash; Apr 2025</div>
+                    </div>
+                </div>
+
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <div class="tl-content">
+                        <div class="tl-name">IT Systems Administration Assistant</div>
+                        <div class="tl-org">Texas A&amp;M Corpus Christi</div>
+                        <div class="tl-date mono">Aug 2019 &ndash; Dec 2021</div>
+                    </div>
+                </div>
+
+                <div class="tl-item last">
+                    <div class="tl-dot"></div>
+                    <div class="tl-content">
+                        <div class="tl-name">Submarine Electronics Technician</div>
+                        <div class="tl-org">United States Navy &middot; Active Duty &middot; Norfolk, VA</div>
+                        <div class="tl-date mono">Apr 2014 &ndash; Apr 2019</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
 
 </div>
-<footer class="w3-container w3-blue w3-center w3-margin-top">
-    <p>Find me on social media.</p>
-    <a href="https://www.linkedin.com/in/patrick-carroll-9500-it" target="_blank">
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
-    </a>
-    <a href="https://github.com/PCarroll9500" target="_blank">
-        <i class="fa fa-github w3-hover-opacity"></i>
-    </a>
-    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
+
+<!-- PROJECTS -->
+<div class="projects-section">
+    <h2 class="section-heading"><span class="mono">//</span> Projects</h2>
+    <div class="project-grid">
+
+        <!-- Battlezone -->
+        <a class="project-card" href="https://github.com/PCarroll9500" target="_blank">
+            <div class="project-art">
+                <svg viewBox="0 0 300 160" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="300" height="160" fill="#020d02"/>
+                    <!-- Perspective grid -->
+                    <line x1="150" y1="160" x2="0" y2="110" stroke="#00ff41" stroke-width="0.4" opacity="0.2"/>
+                    <line x1="150" y1="160" x2="60" y2="110" stroke="#00ff41" stroke-width="0.4" opacity="0.2"/>
+                    <line x1="150" y1="160" x2="120" y2="110" stroke="#00ff41" stroke-width="0.4" opacity="0.2"/>
+                    <line x1="150" y1="160" x2="180" y2="110" stroke="#00ff41" stroke-width="0.4" opacity="0.2"/>
+                    <line x1="150" y1="160" x2="240" y2="110" stroke="#00ff41" stroke-width="0.4" opacity="0.2"/>
+                    <line x1="150" y1="160" x2="300" y2="110" stroke="#00ff41" stroke-width="0.4" opacity="0.2"/>
+                    <line x1="0" y1="125" x2="300" y2="125" stroke="#00ff41" stroke-width="0.4" opacity="0.2"/>
+                    <line x1="0" y1="115" x2="300" y2="115" stroke="#00ff41" stroke-width="0.4" opacity="0.15"/>
+                    <!-- Horizon line -->
+                    <line x1="0" y1="110" x2="300" y2="110" stroke="#00ff41" stroke-width="0.6" opacity="0.35"/>
+                    <!-- Tank tracks -->
+                    <rect x="60" y="88" width="180" height="22" rx="11" fill="none" stroke="#00ff41" stroke-width="2"/>
+                    <line x1="85" y1="88" x2="85" y2="110" stroke="#00ff41" stroke-width="1.2" opacity="0.5"/>
+                    <line x1="110" y1="88" x2="110" y2="110" stroke="#00ff41" stroke-width="1.2" opacity="0.5"/>
+                    <line x1="135" y1="88" x2="135" y2="110" stroke="#00ff41" stroke-width="1.2" opacity="0.5"/>
+                    <line x1="160" y1="88" x2="160" y2="110" stroke="#00ff41" stroke-width="1.2" opacity="0.5"/>
+                    <line x1="185" y1="88" x2="185" y2="110" stroke="#00ff41" stroke-width="1.2" opacity="0.5"/>
+                    <line x1="210" y1="88" x2="210" y2="110" stroke="#00ff41" stroke-width="1.2" opacity="0.5"/>
+                    <!-- Hull -->
+                    <polygon points="68,88 232,88 218,62 82,62" fill="none" stroke="#00ff41" stroke-width="2.2" stroke-linejoin="round"/>
+                    <!-- Hull depth lines -->
+                    <line x1="82" y1="62" x2="68" y2="88" stroke="#00ff41" stroke-width="0.6" opacity="0.3"/>
+                    <line x1="218" y1="62" x2="232" y2="88" stroke="#00ff41" stroke-width="0.6" opacity="0.3"/>
+                    <!-- Turret -->
+                    <polygon points="108,62 192,62 184,36 116,36" fill="none" stroke="#00ff41" stroke-width="2.2" stroke-linejoin="round"/>
+                    <!-- Barrel -->
+                    <rect x="184" y="41" width="60" height="8" fill="none" stroke="#00ff41" stroke-width="2.2"/>
+                    <line x1="244" y1="41" x2="244" y2="49" stroke="#00ff41" stroke-width="2.2"/>
+                    <!-- Hatch -->
+                    <circle cx="150" cy="49" r="7" fill="none" stroke="#00ff41" stroke-width="1.5" opacity="0.7"/>
+                    <!-- Crosshair top -->
+                    <line x1="148" y1="8" x2="152" y2="8" stroke="#00ff41" stroke-width="1.2" opacity="0.6"/>
+                    <line x1="150" y1="6" x2="150" y2="10" stroke="#00ff41" stroke-width="1.2" opacity="0.6"/>
+                    <!-- Corner brackets -->
+                    <path d="M8,8 L8,20 M8,8 L20,8" stroke="#00ff41" stroke-width="1.5" fill="none" opacity="0.5"/>
+                    <path d="M292,8 L292,20 M292,8 L280,8" stroke="#00ff41" stroke-width="1.5" fill="none" opacity="0.5"/>
+                    <path d="M8,152 L8,140 M8,152 L20,152" stroke="#00ff41" stroke-width="1.5" fill="none" opacity="0.5"/>
+                    <path d="M292,152 L292,140 M292,152 L280,152" stroke="#00ff41" stroke-width="1.5" fill="none" opacity="0.5"/>
+                    <!-- Glow layers -->
+                    <polygon points="108,62 192,62 184,36 116,36" fill="none" stroke="#00ff41" stroke-width="6" opacity="0.05"/>
+                    <rect x="184" y="41" width="60" height="8" fill="none" stroke="#00ff41" stroke-width="6" opacity="0.05"/>
+                </svg>
+            </div>
+            <div class="project-body">
+                <div class="project-top">
+                    <span class="project-name">Battlezone</span>
+                    <span class="project-lock mono"><i class="fa-solid fa-lock"></i> private</span>
+                </div>
+                <p class="project-desc">Recreation of the 1980s Atari tank simulator in C/C++ &amp; OpenGL. Green vector wireframe graphics, particle effects, collision detection.</p>
+                <div class="project-tags">
+                    <span class="tag">C++</span><span class="tag">OpenGL</span><span class="tag">Game Dev</span>
+                </div>
+            </div>
+        </a>
+
+        <!-- Stock Bot -->
+        <a class="project-card" href="https://github.com/PCarroll9500" target="_blank">
+            <div class="project-art">
+                <svg viewBox="0 0 300 160" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="300" height="160" fill="#060a06"/>
+                    <!-- Grid -->
+                    <line x1="30" y1="20" x2="30" y2="140" stroke="#e8a830" stroke-width="0.4" opacity="0.15"/>
+                    <line x1="30" y1="140" x2="280" y2="140" stroke="#e8a830" stroke-width="0.4" opacity="0.15"/>
+                    <line x1="30" y1="100" x2="280" y2="100" stroke="#e8a830" stroke-width="0.3" opacity="0.1"/>
+                    <line x1="30" y1="60" x2="280" y2="60" stroke="#e8a830" stroke-width="0.3" opacity="0.1"/>
+                    <!-- Area fill under trend -->
+                    <polygon points="30,130 80,115 130,95 180,72 230,52 280,32 280,140 30,140" fill="#2db87c" opacity="0.06"/>
+                    <!-- Trend line -->
+                    <polyline points="30,130 80,115 130,95 180,72 230,52 280,32" fill="none" stroke="#2db87c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <!-- Candles -->
+                    <line x1="55" y1="108" x2="55" y2="130" stroke="#ff4d6d" stroke-width="1.5"/>
+                    <rect x="49" y="113" width="12" height="12" fill="#ff4d6d" rx="1"/>
+                    <line x1="95" y1="100" x2="95" y2="122" stroke="#2db87c" stroke-width="1.5"/>
+                    <rect x="89" y="103" width="12" height="11" fill="#2db87c" rx="1"/>
+                    <line x1="135" y1="82" x2="135" y2="104" stroke="#2db87c" stroke-width="1.5"/>
+                    <rect x="129" y="85" width="12" height="13" fill="#2db87c" rx="1"/>
+                    <line x1="175" y1="62" x2="175" y2="84" stroke="#ff4d6d" stroke-width="1.5"/>
+                    <rect x="169" y="66" width="12" height="12" fill="#ff4d6d" rx="1"/>
+                    <line x1="215" y1="42" x2="215" y2="64" stroke="#2db87c" stroke-width="1.5"/>
+                    <rect x="209" y="46" width="12" height="13" fill="#2db87c" rx="1"/>
+                    <line x1="255" y1="26" x2="255" y2="46" stroke="#2db87c" stroke-width="1.5"/>
+                    <rect x="249" y="29" width="12" height="12" fill="#2db87c" rx="1"/>
+                    <!-- GPT label -->
+                    <text x="240" y="145" font-family="monospace" font-size="9" fill="#e8a830" opacity="0.5">GPT-4o</text>
+                    <text x="32" y="145" font-family="monospace" font-size="9" fill="#e8a830" opacity="0.5">IBKR API</text>
+                </svg>
+            </div>
+            <div class="project-body">
+                <div class="project-top">
+                    <span class="project-name">Stock Bot</span>
+                    <span class="project-lock mono"><i class="fa-solid fa-lock"></i> private</span>
+                </div>
+                <p class="project-desc">Automated day-trading engine that scans for volatility, analyzes news via GPT-4o, and executes trades through the Interactive Brokers API. Hosted on AWS.</p>
+                <div class="project-tags">
+                    <span class="tag">Python</span><span class="tag">GPT-4o</span><span class="tag">AWS</span><span class="tag">IBKR</span>
+                </div>
+            </div>
+        </a>
+
+        <!-- Document AI -->
+        <a class="project-card" href="https://github.com/PCarroll9500" target="_blank">
+            <div class="project-art">
+                <svg viewBox="0 0 300 160" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="300" height="160" fill="#060a10"/>
+                    <!-- Document stack -->
+                    <rect x="62" y="30" width="120" height="148" rx="4" fill="none" stroke="#4f8ef7" stroke-width="1.5" opacity="0.25" transform="translate(6,0) rotate(4 122 104)"/>
+                    <rect x="62" y="30" width="120" height="148" rx="4" fill="none" stroke="#4f8ef7" stroke-width="1.5" opacity="0.4" transform="translate(3,0) rotate(2 122 104)"/>
+                    <!-- Main document -->
+                    <rect x="62" y="18" width="120" height="130" rx="4" fill="#0a0f1a" stroke="#4f8ef7" stroke-width="1.8"/>
+                    <!-- Fold corner -->
+                    <polygon points="158,18 182,18 182,42 158,42" fill="#0a0f1a" stroke="#4f8ef7" stroke-width="1.2"/>
+                    <line x1="158" y1="18" x2="182" y2="42" stroke="#4f8ef7" stroke-width="1.2"/>
+                    <!-- Text lines -->
+                    <line x1="76" y1="54" x2="156" y2="54" stroke="#4f8ef7" stroke-width="1.5" opacity="0.4"/>
+                    <line x1="76" y1="64" x2="156" y2="64" stroke="#4f8ef7" stroke-width="1.5" opacity="0.4"/>
+                    <line x1="76" y1="74" x2="136" y2="74" stroke="#4f8ef7" stroke-width="1.5" opacity="0.4"/>
+                    <line x1="76" y1="84" x2="156" y2="84" stroke="#4f8ef7" stroke-width="1.5" opacity="0.3"/>
+                    <line x1="76" y1="94" x2="146" y2="94" stroke="#4f8ef7" stroke-width="1.5" opacity="0.3"/>
+                    <!-- Scan beam -->
+                    <rect x="62" y="105" width="120" height="7" fill="#2db87c" opacity="0.12"/>
+                    <line x1="62" y1="108" x2="182" y2="108" stroke="#2db87c" stroke-width="2" opacity="0.9"/>
+                    <!-- Right side: AI network -->
+                    <circle cx="228" cy="45" r="6" fill="none" stroke="#4f8ef7" stroke-width="1.5"/>
+                    <circle cx="252" cy="65" r="6" fill="none" stroke="#4f8ef7" stroke-width="1.5"/>
+                    <circle cx="228" cy="85" r="6" fill="none" stroke="#4f8ef7" stroke-width="1.5"/>
+                    <circle cx="228" cy="120" r="6" fill="none" stroke="#2db87c" stroke-width="1.5"/>
+                    <circle cx="252" cy="100" r="6" fill="none" stroke="#2db87c" stroke-width="1.5"/>
+                    <line x1="228" y1="51" x2="252" y2="59" stroke="#4f8ef7" stroke-width="1" opacity="0.5"/>
+                    <line x1="252" y1="71" x2="228" y2="79" stroke="#4f8ef7" stroke-width="1" opacity="0.5"/>
+                    <line x1="228" y1="91" x2="252" y2="94" stroke="#2db87c" stroke-width="1" opacity="0.5"/>
+                    <line x1="252" y1="106" x2="228" y2="114" stroke="#2db87c" stroke-width="1" opacity="0.5"/>
+                    <text x="210" y="148" font-family="monospace" font-size="8" fill="#4f8ef7" opacity="0.5">Azure AI</text>
+                </svg>
+            </div>
+            <div class="project-body">
+                <div class="project-top">
+                    <span class="project-name">Document AI Scanner</span>
+                    <span class="project-lock mono"><i class="fa-solid fa-lock"></i> private</span>
+                </div>
+                <p class="project-desc">Automated document classification, renaming, meta-tagging and organization. Built with Azure AI Intelligence, OpenAI, Python, Java, and JavaScript.</p>
+                <div class="project-tags">
+                    <span class="tag">Python</span><span class="tag">Java</span><span class="tag">Azure AI</span><span class="tag">OpenAI</span>
+                </div>
+            </div>
+        </a>
+
+        <!-- Resume Builder -->
+        <a class="project-card" href="https://github.com/PCarroll9500/resume-builder" target="_blank">
+            <div class="project-art">
+                <svg viewBox="0 0 300 160" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="300" height="160" fill="#060a10"/>
+                    <!-- Browser/app chrome -->
+                    <rect x="20" y="14" width="260" height="140" rx="5" fill="#0c1220" stroke="#4f8ef7" stroke-width="1.5"/>
+                    <rect x="20" y="14" width="260" height="24" rx="5" fill="#0e1525"/>
+                    <line x1="20" y1="38" x2="280" y2="38" stroke="#4f8ef7" stroke-width="1" opacity="0.4"/>
+                    <!-- Browser dots -->
+                    <circle cx="35" cy="26" r="4" fill="#ff5f57" opacity="0.8"/>
+                    <circle cx="50" cy="26" r="4" fill="#ffbd2e" opacity="0.8"/>
+                    <circle cx="65" cy="26" r="4" fill="#28c840" opacity="0.8"/>
+                    <!-- URL bar -->
+                    <rect x="80" y="19" width="160" height="14" rx="3" fill="#0a0f1a" stroke="#4f8ef7" stroke-width="0.8" opacity="0.5"/>
+                    <text x="88" y="29" font-family="monospace" font-size="7" fill="#4f8ef7" opacity="0.6">pcarroll9500.github.io/resume-builder</text>
+                    <!-- Editor panel (left) -->
+                    <rect x="26" y="44" width="110" height="104" fill="#080c14" rx="2"/>
+                    <!-- Markdown code lines -->
+                    <text x="32" y="58" font-family="monospace" font-size="7" fill="#e8a830">---</text>
+                    <text x="32" y="68" font-family="monospace" font-size="7" fill="#4f8ef7">name: <tspan fill="#2db87c">Patrick Carroll</tspan></text>
+                    <text x="32" y="78" font-family="monospace" font-size="7" fill="#e8a830">---</text>
+                    <text x="32" y="90" font-family="monospace" font-size="7" fill="#4f8ef7">## <tspan fill="#dce3eb">Experience</tspan></text>
+                    <text x="32" y="100" font-family="monospace" font-size="7" fill="#dce3eb" opacity="0.5">**Engineer**</text>
+                    <text x="32" y="110" font-family="monospace" font-size="7" fill="#dce3eb" opacity="0.4">- Built pipelines</text>
+                    <text x="32" y="120" font-family="monospace" font-size="7" fill="#dce3eb" opacity="0.4">- Deployed models</text>
+                    <!-- Preview panel (right) -->
+                    <rect x="142" y="44" width="132" height="104" fill="#ffffff" rx="2" opacity="0.97"/>
+                    <text x="150" y="60" font-family="serif" font-size="9" fill="#222" font-weight="bold">Patrick Carroll</text>
+                    <line x1="148" y1="64" x2="268" y2="64" stroke="#4f8ef7" stroke-width="0.8"/>
+                    <text x="150" y="75" font-family="serif" font-size="7" fill="#444" font-weight="bold">EXPERIENCE</text>
+                    <line x1="148" y1="78" x2="268" y2="78" stroke="#888" stroke-width="0.5"/>
+                    <text x="150" y="88" font-family="sans-serif" font-size="6.5" fill="#333">Junior M&amp;S Engineer</text>
+                    <text x="150" y="97" font-family="sans-serif" font-size="6" fill="#666">Radiance Technologies</text>
+                    <text x="150" y="108" font-family="sans-serif" font-size="7" fill="#333" font-weight="bold">PROJECTS</text>
+                    <line x1="148" y1="111" x2="268" y2="111" stroke="#888" stroke-width="0.5"/>
+                    <text x="150" y="120" font-family="sans-serif" font-size="6" fill="#333">Stock Bot, Battlezone...</text>
+                </svg>
+            </div>
+            <div class="project-body">
+                <div class="project-top">
+                    <span class="project-name">Resume Builder</span>
+                    <span class="project-link mono"><i class="fa-brands fa-github"></i> public</span>
+                </div>
+                <p class="project-desc">Customized Markdown resume builder with live preview, real-time PDF export, and GitHub Actions automation. Deployed at pcarroll9500.github.io/resume-builder.</p>
+                <div class="project-tags">
+                    <span class="tag">Vue</span><span class="tag">Nuxt</span><span class="tag">TypeScript</span><span class="tag">GitHub Actions</span>
+                </div>
+            </div>
+        </a>
+
+        <!-- LLM Comparison -->
+        <a class="project-card" href="https://github.com/PCarroll9500" target="_blank">
+            <div class="project-art">
+                <svg viewBox="0 0 300 160" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="300" height="160" fill="#060a10"/>
+                    <!-- Jupyter notebook feel -->
+                    <rect x="20" y="15" width="260" height="130" rx="4" fill="#0c1018" stroke="#e8a830" stroke-width="1.2" opacity="0.5"/>
+                    <!-- Notebook header -->
+                    <rect x="20" y="15" width="260" height="20" rx="4" fill="#0e1220" stroke="#e8a830" stroke-width="1.2" opacity="0.5"/>
+                    <circle cx="33" cy="25" r="4" fill="#e8a830" opacity="0.7"/>
+                    <text x="44" y="29" font-family="monospace" font-size="8" fill="#e8a830" opacity="0.7">llm_comparison.ipynb</text>
+                    <!-- Cell 1: code -->
+                    <rect x="28" y="42" width="244" height="30" rx="2" fill="#0a0d16" stroke="#4f8ef7" stroke-width="0.8" opacity="0.4"/>
+                    <text x="34" y="54" font-family="monospace" font-size="7" fill="#4f8ef7" opacity="0.7">In [1]:</text>
+                    <text x="70" y="54" font-family="monospace" font-size="7" fill="#dce3eb">results = compare_models(</text>
+                    <text x="70" y="64" font-family="monospace" font-size="7" fill="#dce3eb">   models=<tspan fill="#2db87c">["gpt-4","gpt-3.5"]</tspan>)</text>
+                    <!-- Cell 2: chart output -->
+                    <rect x="28" y="78" width="244" height="60" rx="2" fill="#f8f8f8" opacity="0.96"/>
+                    <!-- Bar chart -->
+                    <rect x="50" y="108" width="18" height="22" fill="#4f8ef7"/>
+                    <rect x="78" y="98" width="18" height="32" fill="#a78bfa"/>
+                    <rect x="106" y="90" width="18" height="40" fill="#4f8ef7" opacity="0.7"/>
+                    <rect x="134" y="103" width="18" height="27" fill="#a78bfa" opacity="0.7"/>
+                    <text x="50" y="140" font-family="sans-serif" font-size="6" fill="#444">GPT-4</text>
+                    <text x="75" y="140" font-family="sans-serif" font-size="6" fill="#444">GPT-3.5</text>
+                    <text x="103" y="140" font-family="sans-serif" font-size="6" fill="#444">T1</text>
+                    <text x="131" y="140" font-family="sans-serif" font-size="6" fill="#444">T2</text>
+                    <text x="168" y="100" font-family="sans-serif" font-size="8" fill="#333" font-weight="bold">Similarity Score</text>
+                    <text x="168" y="112" font-family="monospace" font-size="7" fill="#4f8ef7">GPT-4:   0.924</text>
+                    <text x="168" y="122" font-family="monospace" font-size="7" fill="#a78bfa">GPT-3.5: 0.871</text>
+                </svg>
+            </div>
+            <div class="project-body">
+                <div class="project-top">
+                    <span class="project-name">LLM Context Similarity</span>
+                    <span class="project-lock mono"><i class="fa-solid fa-lock"></i> private</span>
+                </div>
+                <p class="project-desc">Benchmarked and compared context similarity and accuracy across OpenAI models using Jupyter Notebooks and custom evaluation metrics.</p>
+                <div class="project-tags">
+                    <span class="tag">Python</span><span class="tag">Jupyter</span><span class="tag">OpenAI</span><span class="tag">NLP</span>
+                </div>
+            </div>
+        </a>
+
+        <!-- Portfolio -->
+        <a class="project-card" href="https://github.com/PCarroll9500/PCarroll9500.github.io" target="_blank">
+            <div class="project-art">
+                <svg viewBox="0 0 300 160" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="300" height="160" fill="#060a08"/>
+                    <!-- Radar circles -->
+                    <circle cx="150" cy="85" r="65" fill="none" stroke="#e8a830" stroke-width="0.8" opacity="0.2"/>
+                    <circle cx="150" cy="85" r="45" fill="none" stroke="#e8a830" stroke-width="0.8" opacity="0.2"/>
+                    <circle cx="150" cy="85" r="25" fill="none" stroke="#e8a830" stroke-width="0.8" opacity="0.2"/>
+                    <!-- Radar crosshairs -->
+                    <line x1="85" y1="85" x2="215" y2="85" stroke="#e8a830" stroke-width="0.6" opacity="0.2"/>
+                    <line x1="150" y1="20" x2="150" y2="150" stroke="#e8a830" stroke-width="0.6" opacity="0.2"/>
+                    <!-- Radar sweep trail -->
+                    <line x1="150" y1="85" x2="215" y2="40" stroke="#e8a830" stroke-width="1.5" opacity="0.7"/>
+                    <line x1="150" y1="85" x2="208" y2="50" stroke="#e8a830" stroke-width="1" opacity="0.4"/>
+                    <line x1="150" y1="85" x2="198" y2="56" stroke="#e8a830" stroke-width="0.8" opacity="0.25"/>
+                    <line x1="150" y1="85" x2="185" y2="60" stroke="#e8a830" stroke-width="0.5" opacity="0.12"/>
+                    <!-- Blips -->
+                    <circle cx="185" cy="55" r="3.5" fill="#e8a830" opacity="0.9"/>
+                    <circle cx="185" cy="55" r="6" fill="none" stroke="#e8a830" stroke-width="1" opacity="0.4"/>
+                    <circle cx="120" cy="105" r="2.5" fill="#2db87c" opacity="0.8"/>
+                    <circle cx="175" cy="100" r="2" fill="#2db87c" opacity="0.6"/>
+                    <!-- Center dot -->
+                    <circle cx="150" cy="85" r="3" fill="#e8a830" opacity="0.8"/>
+                    <!-- Label -->
+                    <text x="100" y="152" font-family="monospace" font-size="8" fill="#e8a830" opacity="0.5">pcarroll9500.github.io</text>
+                </svg>
+            </div>
+            <div class="project-body">
+                <div class="project-top">
+                    <span class="project-name">This Portfolio</span>
+                    <span class="project-link mono"><i class="fa-brands fa-github"></i> public</span>
+                </div>
+                <p class="project-desc">Hand-built static portfolio with animated radar canvas, GitHub API integration, and automated resume PDF generation via GitHub Actions.</p>
+                <div class="project-tags">
+                    <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">GitHub Actions</span>
+                </div>
+            </div>
+        </a>
+
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

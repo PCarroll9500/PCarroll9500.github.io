@@ -1,32 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Patrick Carroll - Resume Builder</title>
+    <title>Patrick Carroll — Resume Builder</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        html, body, h1, h2, h3, h4, h5, h6 {
-            font-family: "Roboto", sans-serif;
+        body { background: var(--bg); overflow: hidden; }
+        .page-shell {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .iframe-area {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
         }
         iframe {
-            display: block;
-            width: 100vw;
-            height: calc(100vh - 48px);
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
             border: none;
         }
     </style>
 </head>
 <body>
-<div class="topnav">
-    <a href="index.html">Home</a>
-    <a href="resume.html">Resume</a>
-    <a class="active" href="#">Create a Resume Like Mine!</a>
+
+<div class="page-shell">
+    <nav class="topnav">
+        <div class="nav-inner">
+            <span class="nav-logo">PC</span>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="resume.html">Resume</a>
+                <a class="active" href="resume-builder.html">Resume Builder</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="iframe-area">
+        <iframe src="https://pcarroll9500.github.io/resume-builder/" allow="clipboard-write"></iframe>
+    </div>
 </div>
 
-<iframe src="https://pcarroll9500.github.io/resume-builder/" allow="clipboard-write"></iframe>
 </body>
 </html>
